@@ -38,13 +38,6 @@ jobs:
           mvn --version
           gradle --version
           git --version
-          
-      - name: SonarCloud Scan
-        # You may pin to the exact commit or the version.
-        # uses: SonarSource/sonarcloud-github-action@db501078e936e4b4c8773d1bb949ba9ddb7b6b6a
-        uses: SonarSource/sonarcloud-github-action@v1.9
-        with:
-          # Additional arguments to the sonarcloud scanner
-          args:  optional
-          # Set the sonar.projectBaseDir analysis property
-          projectBaseDir:  optional, default is .     
+          echo where is the android sdk?
+          echo $ANDROID_SDK_ROOT
+  
